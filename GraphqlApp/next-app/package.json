@@ -1,0 +1,49 @@
+{
+  "name": "with-typescript",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "clear && next",
+    "build": "clear && next build",
+    "start": "clear && next start",
+    "type-check": "tsc",
+    "lint:nofix": "clear && npx eslint components/**.ts* && npx eslint interfaces/**.ts* && npx eslint pages/**.ts* && npx eslint lib/**.ts* && npx eslint utils/**.ts* || true",
+    "lint:fix": "clear && npx eslint components/**.ts* --fix && npx eslint interfaces/**.ts* --fix && npx eslint pages/**.ts* --fix && npx eslint lib/**.ts* --fix && npx eslint utils/**.ts* --fix || true",
+    "generate": "clear && gql-gen --config codegen.yml"
+  },
+  "dependencies": {
+    "@graphql-codegen/cli": "^1.8.3",
+    "@types/cookie": "^0.3.3",
+    "@typescript-eslint/eslint-plugin": "^2.7.0",
+    "@typescript-eslint/parser": "^2.7.0",
+    "apollo-boost": "^0.4.4",
+    "apollo-link-context": "^1.0.19",
+    "apollo-link-error": "^1.1.12",
+    "apollo-link-http": "^1.5.16",
+    "cookie": "^0.4.0",
+    "eslint": "^6.6.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "formik": "^2.0.4",
+    "graphql": "^14.5.8",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "latest",
+    "react": "^16.10.1",
+    "react-apollo": "^3.1.3",
+    "react-dom": "^16.10.1",
+    "ts-node-dev": "^1.0.0-pre.44"
+  },
+  "devDependencies": {
+    "@graphql-codegen/typescript": "^1.8.3",
+    "@graphql-codegen/typescript-operations": "^1.8.3",
+    "@graphql-codegen/typescript-react-apollo": "^1.8.3",
+    "@types/graphql": "^14.5.0",
+    "@types/node": "^12.7.8",
+    "@types/react": "^16.9.3",
+    "@types/react-dom": "^16.9.1",
+    "typescript": "3.6.3"
+  },
+  "license": "ISC"
+}
