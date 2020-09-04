@@ -28,7 +28,7 @@
     "pg": "^7.12.1",
     "reflect-metadata": "^0.1.13",
     "ts-node-dev": "^1.0.0-pre.44",
-    "type-graphql": "^0.17.5",
+    "type-graphql": "^0.17.6",
     "typeorm": "^0.2.20",
     "uuid": "^3.3.3"
   },
