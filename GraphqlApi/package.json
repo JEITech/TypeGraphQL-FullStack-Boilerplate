@@ -29,7 +29,7 @@
     "reflect-metadata": "^0.1.13",
     "ts-node-dev": "^1.0.0-pre.44",
     "type-graphql": "^0.17.5",
-    "typeorm": "^0.2.20",
+    "typeorm": "^0.2.25",
     "uuid": "^3.3.3"
   },
   "devDependencies": {
